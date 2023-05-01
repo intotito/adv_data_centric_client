@@ -45,4 +45,11 @@ export class RestServiceService {
     console.log('Getting server error', this.serverError);
     return this.serverError;
   }
+
+  getModules(user: any, id: any): Observable<any>{
+    console.log("user", user, "id", id);
+    let url: string = `http://localhost:8080/module/${user}/${id}`;
+    console.log('attempting', url);
+    return this.httpClient.get(url);
+  }
 }

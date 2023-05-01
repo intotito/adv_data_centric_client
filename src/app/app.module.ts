@@ -12,6 +12,7 @@ import { LecturerUpdateComponent } from './components/lecturer-update/lecturer-u
 import { StudentComponent } from './components/student/student.component';
 import { ErrorComponent } from './components/error/error.component';
 import { LecturerComponent } from './components/lecturer/lecturer.component';
+import { ModuleComponent } from './components/module/module.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LecturerComponent } from './components/lecturer/lecturer.component';
     LecturerComponent,
     LecturerUpdateComponent,
     StudentComponent,
-    ErrorComponent
+    ErrorComponent,
+    ModuleComponent
   ],
   imports: [
     CommonModule,

@@ -5,6 +5,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { LecturerUpdateComponent } from './components/lecturer-update/lecturer-update.component';
 import { StudentComponent } from './components/student/student.component';
+import { ModuleComponent } from './components/module/module.component';
 import { ErrorComponent } from './components/error/error.component';
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'lecturer', component: LecturerComponent },
   { path: 'lecturer-update/:lid', component: LecturerUpdateComponent },
   {path: 'error', component: ErrorComponent},
+  {path: 'module/:user/:id', component: ModuleComponent},
   { path: '', component: HomePageComponent },
   { path: '**', component: PageNotFoundComponent },
 ];

@@ -27,6 +27,10 @@ export class LecturerComponent {
   }
 
   viewLecturer(lecturer: any) {
-    this.router.navigate(['lecturer-update', lecturer.lid])
+    this.router.navigate(['lecturer-update', lecturer.lid]);
+  }
+
+  viewModules(lid: string){
+    this.router.navigate([`module/lecturer/${lid}`]);
   }
 }

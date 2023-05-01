@@ -58,4 +58,8 @@ export class StudentComponent {
     });
     this.dialog.showModal();
   }  
+
+  viewModules(sid: string){
+    this.router.navigate([`module/student/${sid}`]);
+  }
 }

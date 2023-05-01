@@ -23,42 +23,30 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Lecturers</h1>
+                <h1 class="h3 mb-2 text-gray-800">Modules</h1>
                 <p class="mb-4">
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4 col-sm-12 col-md-10 col-lg-10 col-xl-6">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">List of Lecturers</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">{{message}}</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>LID</th>
+                                        <th>MID</th>
                                         <th>Name</th>
-                                        <th>Tax Band</th>
-                                        <th>Salary Scale</th>
-                                        <th>Action</th>
+                                        <th>Level</th>
+                                        <th>Credits</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr *ngFor="let item of data" >
-                                        <td>{{item['lid']}}</td>
+                                        <td>{{item['mid']}}</td>
                                         <td>{{item['name']}}</td>
-                                        <td>{{item['taxBand']}}</td>
-                                        <td>{{item['salaryScale']}}</td>
-                                        <td class="text-center">
-
-                                            <div class="d-inline btn btn-link " data-toggle="tooltip" title="Update {{item['name']}}">
-                                                <span class="material-icons" (click)="viewLecturer(item)">edit_note</span>
-                                            </div>
-                                            <div class="d-inline btn btn-link text-dark" data-toggle="tooltip" title="View Modules">
-                                                <span class="material-icons" (click)="viewModules(item['lid'])">view_module</span>
-                                            </div>
-
-                                            
-                                        </td>
+                                        <td>{{item['level']}}</td>
+                                        <td>{{item['credits']}}</td>
                                     </tr>
                                 </tbody>
                             </table>
