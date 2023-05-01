@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+dialog{
+    background-color: #FFFFFF00;
+    border-radius: 10px;
+    width: 25em;
+    border-style: outset;    
+}

@@ -1,13 +1,55 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>G00397738</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
+
+  <!-- Start of My Custom Dialog Box-->
+  <dialog id="customDialog" class="p-0">
+    <form method="dialog">
+      <div class="container-fluid card">
+        
+          <div class="h5 border-bottom border-4 border-primary text-white bg-dark mt-1 card-header">Delete Student</div>
+        <div class="card-body">
+          <p id="dialogMessage">
+
+          </p>
+
+        </div>
+        <div class="card-footer flex-column">
+          <div class="row b-2">
+            <button value="cancel" formmethod="dialog" class="col-6 m-0 p-2 border-0"><span class="material-icons bg-icon text-danger">close</span></button>
+            <button id="dialogConfirmBtn" value="default" class="col-6 m-0 p-2 border-0 ">
+              <span class="material-icons bg-icon text-success">done_all</span>
+            </button>
+          </div>
+        </div>
+    </form>
+    </div>
+  </dialog>
+
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">G00397738</a>
+    
+  </nav>
+
+
+
+
+
   <app-root></app-root>
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
 </body>
+
 </html>

@@ -1,0 +1,80 @@
+<p [hidden]="hideErrorMessage">{{ errorMessage }}</p>
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow">
+
+            <!-- Topbar Navbar -->
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <h1 class="h3 mb-2 text-gray-800">Update Lecturer</h1>
+            <p class="mb-4">Update the Lecturer's details</p>
+
+
+
+            <div class="card shadow mb-4 col-sm-12 col-md-10 col-lg-6 col-xl-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">{{name}}</h6>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="lid">LID</label>
+                            <input type="text" readonly class="form-control" [(ngModel)]="lid" name="lid" id="lid"
+                                aria-describedby="lectHelp" placeholder="Lecturer ID" value={{lid}}>
+                            <small id="lectHelp" class="form-text text-muted">The identification number of the
+                                Lecturer</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="name" name="name" id="name"
+                                aria-describedby="nameHelp" placeholder="Name" value={{name}}>
+                            <small id="nameHelp" class="form-text text-muted">The name of the Lecturer</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="taxBand">Tax Band</label>
+                            <input type="text" class="form-control" [(ngModel)]="taxBand" name="taxBand" id="taxBand"
+                                aria-describedby="taxBandHelp" placeholder="Tax Band" value={{taxBand}}>
+                            <small id="taxBandHelp" class="form-text text-muted">The name of the Lecturer</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="salaryScale">Salary Scale</label>
+                            <input type="number" class="form-control" [(ngModel)]="salaryScale" name="salaryScale"
+                                id="salaryScale" aria-describedby="salaryScaleHelp" placeholder="Salary Scale"
+                                value={{salaryScale}}>
+                            <small id="salaryScaleHelp" class="form-text text-muted">The salary scale of the
+                                Lecturer</small>
+                        </div>
+
+
+                        
+                        <button type="submit" class="btn btn-primary offset-sm-6 offset-md-5 offset-lg-3 offset-xl-2 mt-4" (click)="onSave()">Update</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+       <!-- Footer -->
+    <footer class="bg-light">
+        <div class="my-auto px-3">
+          <nav>
+            <div class="pb-2 border-top border-outset"><a class="h5 pb-4" routerLink="/lecturer">Lecturers</a></div>
+            <div class="pb-4 "><a class="h5 pb-4" routerLink="/student">Students</a></div>
+          </nav>
+          <div class="copyright text-center my-auto">
+            <span>Advanced Data Centric Web Application</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+    </div>
+</div>
